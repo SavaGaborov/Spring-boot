@@ -1,0 +1,31 @@
+package codemind.travelplanner.springdatatests;
+
+import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertThat;
+
+import java.util.List;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import codemind.travelplanner.trip.Trip;
+import codemind.travelplanner.trip.TripRepository;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@DataJpaTest
+public class findByDestinationTest {
+
+	@Autowired
+	private TripRepository tripRepository;
+
+	@Test
+	public void findByDestination() {
+		  List<Trip> startsWithGaOrGe = tripRepository.findByDestination("Gr%");
+	      assertThat(startsWithGaOrGe.toString(), equalTo("[Greece, Greenland, Grenada]"));
+	}
+
+}

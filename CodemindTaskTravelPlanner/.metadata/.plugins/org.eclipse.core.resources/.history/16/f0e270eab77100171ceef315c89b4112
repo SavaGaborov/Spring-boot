@@ -1,0 +1,47 @@
+package codemind.travelplanner.junittests;
+
+import static org.junit.Assert.*;
+
+import java.util.Date;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.support.AnnotationConfigContextLoader;
+import org.springframework.test.web.servlet.MockMvc;
+
+import codemind.travelplanner.trip.Trip;
+import codemind.travelplanner.trip.TripController;
+import codemind.travelplanner.trip.TripService;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration( loader=AnnotationConfigContextLoader.class)
+public class allTripsControllerTest {
+	
+	@Autowired
+	TripController tripController;
+	
+	@Autowired
+	TripService tripService;
+	
+	private MockMvc mockObject;
+	
+	public void setup()
+    {
+        // Test Purchase
+        Trip trip = new Trip();
+        trip.setId(100);
+        trip.setDestination("Zimbabwe");
+        trip.setStartDate(new Date("2017-10-10"));
+        trip.setEndDate(new Date("2017-10-17"));
+
+    }
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

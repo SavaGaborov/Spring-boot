@@ -1,0 +1,47 @@
+package codemind.travelplanner.trip;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TripController {
+
+	@Autowired
+	private TripService tripService;
+	
+	@RequestMapping(method = RequestMethod.GET, value = "/bestDestination")
+	public Trip bestDestination() {
+		
+		Trip trip = new Trip();
+		
+		trip.setName("emp1");
+		trip.setDesignation("manager");
+		emp.setEmpId("1");
+		emp.setSalary(3000);
+
+		return emp;
+	}
+	
+	@RequestMapping("/trips")
+	public List<Trip> getAllTrips(){
+		return tripService.getAllTrips();
+	}
+	
+	@RequestMapping("/trips/{destination}")
+	public List<Trip> getTrip(@PathVariable String destination){
+		return tripService.getTrip(destination);
+	}
+	
+	@RequestMapping(method=RequestMethod.POST, value="/trips")
+	public void addTrip(@RequestBody Trip trip){
+		tripService.addTrip(trip);
+	}
+
+	
+}

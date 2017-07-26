@@ -1,0 +1,5 @@
+package codemind.travelplanner.trip;
+
+public class Trip {
+
+}

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Travel Planner Codemind tasks
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: savag
+Implementation-Vendor-Id: codemind.travellplaner
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://projects.spring.io/spring-boot/TravelPlanne
+ r/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

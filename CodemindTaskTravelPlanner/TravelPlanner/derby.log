@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Jul 26 05:31:32 CEST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015d-7cf3-05bb-000001a66b80 
+on database directory memory:C:\Users\savag\workspace\CodemindTaskTravelPlanner\TravelPlanner\testdb with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Loaded from file:/C:/Users/savag/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_121-b13
+user.dir=C:\Users\savag\workspace\CodemindTaskTravelPlanner\TravelPlanner
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

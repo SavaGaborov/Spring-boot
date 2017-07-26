@@ -1,0 +1,10 @@
+package codemind.travelplanner;
+
+public class AppStarterClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

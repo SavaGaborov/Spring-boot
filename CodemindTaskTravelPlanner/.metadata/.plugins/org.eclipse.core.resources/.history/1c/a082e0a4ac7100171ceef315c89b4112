@@ -1,0 +1,17 @@
+package codemind.travelplanner.integrationtests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import codemind.travelplanner.AppStarterClass;
+
+public class findByDestinationTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

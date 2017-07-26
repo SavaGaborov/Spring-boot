@@ -1,0 +1,23 @@
+package codemind.travelplanner.integrationtests;
+
+import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertThat;
+
+import java.util.List;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+
+
+@RunWith(SpringJUnit4ClassRunner.class)
+public class findByDestinationTest {
+
+	@Test
+	public void test() {
+		
+	}
+
+}
